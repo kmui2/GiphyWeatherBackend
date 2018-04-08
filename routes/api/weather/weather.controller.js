@@ -40,7 +40,7 @@ export function add(req, res) {
 // CREATE
 // "delete" - will create a new post
 export function deleteAll(req, res) {
-	weather.delete({})
+	Weather.delete({})
 	.then(result => {
 		return res.json(result);
 	})
