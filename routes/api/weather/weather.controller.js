@@ -35,3 +35,18 @@ export function add(req, res) {
       return res.status(500).send(err);
     });
 }
+
+
+// CREATE
+// "delete" - will create a new post
+export function deleteAll(req, res) {
+	weather.delete({})
+	.then(result => {
+		return res.json(result);
+	})
+	.catch(err => {
+		console.error(err);
+		return res.status(500).send(err);
+	})
+  }
+  

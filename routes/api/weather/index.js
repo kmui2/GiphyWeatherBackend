@@ -7,3 +7,4 @@ export const router = express.Router();
 // will run the "start" function the controller
 router.post("/", controller.get);
 router.post("/add", controller.add);
+router.post("/deleteAll", controller.deleteAll);
